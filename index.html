@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+	<title></title>
+
+	<link rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+
+<style> 
+.tl-text h3.tl-headline-date {
+	color: #676866;
+	font-size: 40px;
+	padding-bottom: 5px;
+	padding-left: 15px;
+}
+
+.tl-text p {
+	color: #0E359B;
+}
+
+.tl-caption {
+	color: #FFFFFF;
+}
+
+.tl-timemarker .tl-timemarker-content-container .tl-timemarker-content {
+	background-color: #DF6620;
+}
+
+</style>
+
+</head>
+<body>
+
+<div id="timeline-embed" style="width: 100%; height: 600px"></div>
+
+
+<script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+<script src="./pape-timeline.js"></script>
+<script>
+  var additionalOptions = {
+              default_bg_color: {r:223, g:102, b:32},
+              timenav_height: 250,
+              scale_factor: 1,
+              duration: 1500,
+              }
+  window.timeline = new TL.Timeline('timeline-embed', timeline_json, additionalOptions );
+</script>
+
+</body>
+</html>
